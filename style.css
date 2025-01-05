@@ -150,7 +150,7 @@ button,.MainContainer,.SubContainer,.LogoContainer{
 }
 
 .MainContainer{
-    min-width: 375px;
+    min-width: 370px;
     height: 900px;
     background-image: url(assets/images/background-mobile.png);
     background-size: cover;
