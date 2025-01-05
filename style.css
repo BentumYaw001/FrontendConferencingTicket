@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+}
+
+body,span{
+    color: hsl(245, 15%, 58%);
+    font-family: 'Karla';
+   
+}
+input:valid{
+    background-color:hsl(245, 15%, 58%,30%);
+}
+
+input:hover,input:focus:hover{
+    border: none;
+    outline: none;
+}
+
+input:focus{
+   border: 2px solid black;
+   outline: 2.5px solid hsl(245, 15%, 58%);
+}
+
+
+h2,p,input{
+    margin-bottom:20px;
+}
+
+label{
+    margin-bottom: 5px;
+}
+
+input{
+    border: 1.95px solid hsl(252, 6%, 83%,0.7);
+    height: 33px;
+    padding: 0 15px;
+    color: hsl(252, 6%, 83%);
+    outline: none;
+}
+
+button{
+    margin: 10px 0;
+    border: none;
+    font-weight: bold;
+    color:hsl(248, 70%, 10%);
+    background-color: hsl(7, 71%, 60%);
+}
+
+#RemoveImage,#ChangeImage{
+    margin: 10px;
+    padding: 10px 15px;
+    color: hsl(252, 6%, 83%);
+    background-color:hsl(245, 15%, 58%,30%);
+    outline: none;
+    border-radius: 3px;
+    border: none;
+}
+
+#RemoveImage:focus,#ChangeImage:focus{
+    text-decoration: underline;
+}
+
+button:focus{
+    border: 0.2px solid black;
+    outline: 0.5px solid white;
+}
+
+input,button,
+.DropArea,.ImageContainer{
+    border-radius: 10px;
+}
+
+.Location,.Username,
+.Ticket .LogoContainer,
+.TicketImage,.ImageContainer,
+.MainContainer,.SubContainer,
+.LogoContainer,.ImageTryOut{
+    display: flex;
+}
+
+.ImageTryOut,.TicketShow,.MainContainer{
+    margin: auto;
+}
+
+.Ticket .LogoContainer,.Username{
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+button,.MainContainer,.SubContainer,.LogoContainer{
+    padding: 15px;
+}
+
+.MainContainer,.SubContainer,
+.LogoContainer,.Location,
+.Ticket,.ImageTryOut{
+    flex-direction: column;
+}
+
+.ImageTryOut,.ImageContainer,
+.LogoContainer{
+    justify-content: center;
+}
+
+.LogoContainer,h2,label{
+    color: white;
+}
+.TicketImage,.UploadContainer{
+    width: 100%;
+}
+.SubContainer,.MainContainer{
+    position: relative;
+}
+
+.ImageTryOut,.MainContainer{
+    background-repeat: no-repeat;
+}
+.TopDesign,.TopDesignSquiggly,
+.BottomImage,.CircleBottom,
+.CircleTop{
+    position: absolute;
+}
+
+.CircleBottom,.CircleTop,.BottomImage{
+    z-index: 1; 
+}
+
+.CircleTop{
+    top: -7%;
+    left: 40px;
+    width: 180px;
+    
+}
+.CircleBottom{
+    align-self:self-end;
+    right: 1%;
+    top: 45%;
+    width: 150px;
+}
+
+.ImageTryOut{
+    align-items: start;
+    background-image: url(assets/images/pattern-ticket.svg);
+    background-size:100%;
+    background-position: 100%;
+    width: 80%;
+    margin: 10px;
+    height: 35.5vh;
+    z-index: 2;
+}
+
+.MainContainer{
+    min-width: 375px;
+    height: 900px;
+    background-image: url(assets/images/background-mobile.png);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.LogoContainer{
+    flex-direction: row;
+}
+
+.Logo{
+    margin-right: 10px;
+    height: 40px
+}
+
+.SubContainer{
+    width: 90%;
+    z-index: 2;
+}
+
+
+.TopDesign{
+    height:80%;
+}
+
+.TopDesignSquiggly{
+    align-self: flex-end; 
+    margin-right: -15px;
+    height: 65px; 
+  
+}
+.BottomImage{
+    bottom: 0;
+    left: 0;
+    height: 250px;
+    width: 360px;
+}
+
+/* file upload styling */
+.UploadContainer{
+    max-width: 400px;
+    margin: 6px auto;
+    background-color:hsl(248, 70%, 10%);
+}
+
+
+
+.ImageContainer{
+    align-items: center;
+    margin: 10px auto;
+    background-color:hsl(245, 15%, 58%,30%);
+    padding: 5px;
+    width:45px;
+    height: 45px;
+}
+.DropArea{
+    border: 1.95px dashed hsl(252, 6%, 83%,0.5);
+    padding: 20px;
+    text-align: center;
+    background-color:hsl(245, 15%, 58%,20%);
+}
+
+.DropArea:hover,input:hover{
+    border-color: #888;
+    background-color:hsl(245, 15%, 58%,50%);
+}
+
+#UploadTrigger,button,.DropArea,input{
+    cursor: pointer;
+}
+
+.ThePictures{
+    height:60px;
+    width:60px;
+    border-radius:15px;
+    z-index:3;
+}
+
+/* file upload styling end */
+
+
+/* Ticket generated styling section */
+.Ticket,.ImageTryOut{
+    margin-top: 150px;
+}
+.TicketShow{
+    width: 85%;
+}
+
+.Ticket .Logo{
+    height:35px;
+    border-radius:5px;
+}
+span{
+   font-size: 0.7rem;
+}
+
+.TicketHidden{
+    display: none;
+}
+
+.VerticalText{
+ position: absolute;
+ transform: rotate(90deg) translateY(-50%);
+ align-self: flex-end;
+ margin: auto;
+ font-size: 1.5rem;
+ margin-right: 10px;
+}
+
+.GradientText{
+    background: linear-gradient(to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%),hsl(7, 86%, 67%), hsl(0, 0%, 100%) );
+    -webkit-background-clip: text;
+    background-clip:calc(50%);
+    color: transparent;
+    font-size: 2.5rem;
+}
+.TextStyling{
+    color: hsl(7, 86%, 67%);
+    font-size: 1.5rem;
+}
+
+.ErrorState{
+    font-size: 0.8rem;
+    color: red;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+@media (min-width:680px){
+    .MainContainer{
+        background-image: url(assets/images/background-desktop.png);
+        width: 100%;
+        align-items: center;
+        height: 130vh;
+    }
+    .SubContainer,.TicketShow{
+        width: 45%;
+    }
+    button{
+        margin-top: 3px;
+
+    }
+    .BottomImage{
+        margin-bottom: -100px;
+        height: 650px;
+        width: 650px;
+    }
+    .TopDesignSquiggly{
+        align-self: flex-end; 
+        height: 150px;
+    }
+
+    .VerticalText{
+        margin-right: 20px;
+    }
+    .CircleBottom{
+        right: 15%;
+    }
+}
+
+@media (min-width:1150px){
+    .Ticket .Logo{
+        height:55px;
+        border-radius:10px;
+    }
+    
+    span{
+        font-size: 1rem;
+    }
+    h6{
+        font-size: 1.1rem;
+    }
+     
+    .ImageTryOut{
+        justify-content: space-around;
+    }
+
+    .CircleBottom{
+        right: 22%;
+    }
+}
