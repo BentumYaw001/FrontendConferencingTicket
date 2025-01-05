@@ -137,7 +137,7 @@ function EnteredDetails(){
 
 // the ticket show function.
 function TicketSwitch(){
-  if(IsUserName() && isEmail() &&IsGitHub()){
+  if(IsUserName() && isEmail() &&IsGitHub() && !IsImageMissing){
     TheForm.classList.add('TicketHidden');
     TheTicket.classList.remove('TicketHidden');
     EnteredDetails();

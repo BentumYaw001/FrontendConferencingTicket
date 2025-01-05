@@ -58,15 +58,15 @@
           &#9432; Upload your photo (JPG or PNG, max size:500KB).
         </p>
         
-        <label for="FullName" >Full Name</label>
-        <input type="text" name="FullName" id="FullName">
+        <label for="FullName" >Full Name *</label>
+        <input type="text" name="FullName" id="FullName" maxlength="18">
         <p class="ErrorState TicketHidden" id="NameError">  &#9432; This field is required.</p>
 
-        <label for="EmailAddress">Email Address</label>
+        <label for="EmailAddress">Email Address*</label>
         <input type="email" name="EmailAddress" id="EmailAddress" placeholder="example@email.com">
         <p class="ErrorState TicketHidden" id="EmailError">  &#9432; Please enter a valid email address.</p>
 
-        <label for="GitHubUsername">GitHub Username</label>
+        <label for="GitHubUsername">GitHub Username*</label>
         <input type="text" name="GitHubUsername" id="GitHubUsername" placeholder="@yourusername" maxlength="39">
         <p class="ErrorState TicketHidden" id="GitHubError">  &#9432; Please enter a valid github username.</p>
 
@@ -90,7 +90,7 @@
         <div class="LogoContainer Value1">
           <img src="assets/images/logo-mark.svg" alt="logo" class="Logo">
           <div class="Location">
-            <h3>Coding Conf</h3>
+            <h5>Coding Conf</h5>
             <span style="margin-top: 1px;">Jan 31,2025 / Austin , TX</span>
           </div>
          </div>
